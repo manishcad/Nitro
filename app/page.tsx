@@ -235,10 +235,11 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <span className="text-2xl font-black tracking-tighter uppercase italic">NOS</span>
             <span className="text-white/30 text-xs">© 2026 NOS DRINKS INC.</span>
+            <span className="text-red/30 text-md">© Created By Manishcad</span>
           </div>
           <div className="flex gap-10">
             {['Instagram', 'Twitter', 'TikTok'].map(social => (
-              <a key={social} href="#" className="text-sm font-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors">{social}</a>
+              <a key={social} target='_blank' rel='noopener noreferrer' href={`https://www.${social}.com/manishcad`} className="text-sm font-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors">{social}</a>
             ))}
           </div>
         </div>
